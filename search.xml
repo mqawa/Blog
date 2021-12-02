@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>测试</title>
+      <link href="/21120103.html"/>
+      <url>/21120103.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 玩得开心 </category>
+          
+          <category> game </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> play </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Test</title>
+      <link href="/21120102.html"/>
+      <url>/21120102.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前置自增（减）和后置自增（减）的区别以 及效率</title>
+      <link href="/21120101.html"/>
+      <url>/21120101.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="前置自增（减）和后置自增（减）的区别以-及效率"><a href="#前置自增（减）和后置自增（减）的区别以-及效率" class="headerlink" title="前置自增（减）和后置自增（减）的区别以 及效率"></a>前置自增（减）和后置自增（减）的区别以 及效率</h2><h3 id="两者的区别"><a href="#两者的区别" class="headerlink" title="两者的区别"></a><strong>两者的区别</strong></h3><ul><li><strong>《C专家编程》中说道：“++x表示取x的地址，增加它的内容，然后把值放到寄存 器中，x++则表示取x的地址，把他的值装入寄存器中，然后增加内存中的x的 值”。</strong></li><li><strong>前置自增（减）返回的是对象的引用，后置自增（减）返回的是对象的拷贝，这 就意味着对前置自增（减）的操作会操作对象本身，而后置自增（减）不会。</strong></li><li><strong>在现代 IDE 中，会优化内置数据类型，统一为前置自增（减），来优化性能，但 是对于自定义数据类型的重载，前置自增（减）效率优于后置自增（减）。</strong></li></ul><h3 id="为什么前置自增（减）优于后置自增（减）"><a href="#为什么前置自增（减）优于后置自增（减）" class="headerlink" title="为什么前置自增（减）优于后置自增（减）"></a><strong>为什么前置自增（减）优于后置自增（减）</strong></h3><ul><li><p><strong>对于内置数据类型，我们查看反汇编</strong></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">    ++i;</span><br><span class="line">    i++;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><p><img src="../../../images/cpp/inc/int.png" alt="内置"></p></li><li><p><strong>我们发现，运算流程相同，说明编译器对后置自增（减）运算进行了优化</strong></p></li></ul></li><li><p><strong>对于自定义数据类型，我们重载自增（减）运算符后查看反汇编</strong></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="built_in">Test</span>() :<span class="built_in">num</span>(<span class="number">0</span>) &#123;&#125;;</span><br><span class="line">Test <span class="keyword">operator</span>++(<span class="keyword">int</span>) &#123;<span class="comment">//后置自增</span></span><br><span class="line"><span class="keyword">this</span>-&gt;num++;</span><br><span class="line"><span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line">Test&amp; <span class="keyword">operator</span>++() &#123;<span class="comment">//前置自增</span></span><br><span class="line"><span class="keyword">this</span>-&gt;num++;</span><br><span class="line"><span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> num;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">Test t;</span><br><span class="line">++t;</span><br><span class="line">t++;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><img src="../../../images/cpp/inc/Test.png" alt="内置"></li></ul></li><li><p><strong>或者可以通关禁用拷贝构造函数的方式进行验证</strong></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="built_in">Test</span>() :<span class="built_in">num</span>(<span class="number">0</span>) &#123;&#125;;</span><br><span class="line"></span><br><span class="line">Test <span class="keyword">operator</span>++(<span class="keyword">int</span>) &#123;</span><br><span class="line"><span class="keyword">this</span>-&gt;num++;</span><br><span class="line"><span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Test&amp; <span class="keyword">operator</span>++() &#123;</span><br><span class="line"><span class="keyword">this</span>-&gt;num++;</span><br><span class="line"><span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> num;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line"><span class="built_in">Test</span>(<span class="keyword">const</span> Test&amp; test);<span class="comment">//禁用拷贝构造函数</span></span><br><span class="line">Test&amp; <span class="keyword">operator</span>=(<span class="keyword">const</span> Test&amp; test);<span class="comment">//禁用赋值运算符</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">Test t;</span><br><span class="line">++t;</span><br><span class="line">t++;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><p><img src="../../../images/cpp/inc/error.png" alt="内置"></p></li><li><p><strong>会发现后置自增（减）链接错误，说明后置自增（减）调用了拷贝构造函数</strong></p></li></ul></li><li><p><strong>总结：不考虑返回值的话，前置自增（减）在编译器不优化的情况下，效率会优 于后置自增（减），因为后置自增（减）会对表达式进行一次拷贝，如果表达式 为自定义数据类型或者为迭代器等，拷贝的代价会非常大，前置和后置的功能一 样，优先使用前置自增（减）。</strong></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cpp </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Visual Assist X 安装和破解</title>
+      <link href="/share01001.html"/>
+      <url>/share01001.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Visual-Assist-X-安装和破解"><a href="#Visual-Assist-X-安装和破解" class="headerlink" title="Visual Assist X 安装和破解"></a>Visual Assist X 安装和破解</h2><h3 id="官网链接"><a href="#官网链接" class="headerlink" title="官网链接"></a>官网链接</h3><p><strong>Visual Assist X 官网：</strong><a href="https://www.wholetomato.com/">https://www.wholetomato.com/</a> </p><p><strong>Everything 官网：</strong><a href="https://www.voidtools.com/zh-cn/">https://www.voidtools.com/zh-cn/</a></p><hr><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>如果已安装 Visual Assist X 请先卸载</strong></p><p><strong>扩展-&gt;管理扩展-&gt;已安装-&gt;Visual Assist X-&gt;卸载-&gt;关闭Visual Studio-&gt;等待卸载完成</strong></p><p><strong>下载 Visual Assist X 破解文件 + Everything ：</strong><a href="http://cloud.mqawa.com/s/jdTg">Cloudreve</a>，<a href="https://pan.baidu.com/s/1aOO8UDlJTCwScXvoUtINLw">百度网盘</a> <strong>提取码：t7mm</strong></p><p><strong>下载解压，安装Everything 和 Visual Assist X</strong></p><p><img src="../../../images/share/software/devtools/visual_assist_x/1.png" alt="everything"><img src="../../../images/share/software/devtools/visual_assist_x/2.png" alt="visual assist"></p><hr><h3 id="破解"><a href="#破解" class="headerlink" title="破解"></a>破解</h3><p><strong>打开 Everything，搜索 VA_X.dll，如果安装多个版本的 Visual Studio，会检索到多个 VA_X.dll，需要全部替换</strong></p><p><strong>我的路径为 ： C:\Users\CtrlZ\AppData\Local\Microsoft\VisualStudio\16.0_45dbff82\Extensions\5tmzqshx.03l</strong></p><p><strong>无法使用 Everything 可以参考路径寻找</strong></p><p><img src="../../../images/share/software/devtools/visual_assist_x/3.png" alt="搜索结果"></p><p><strong>把解压好的VA_X.dll，替换到打开的路径，破解完成</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 资源分享 </category>
+          
+          <category> 软件资源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 资源分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
