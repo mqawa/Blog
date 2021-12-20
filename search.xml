@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>test</title>
+      <link href="/21122002.html"/>
+      <url>/21122002.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 玩得开心 </category>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 玩得开心,test </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>碎碎念 - butterfly 的美化记录</title>
       <link href="/21122001.html"/>
       <url>/21122001.html</url>
@@ -21,33 +48,6 @@
         <tags>
             
             <tag> 碎碎念 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>沟通的艺术</title>
-      <link href="/21121702.html"/>
-      <url>/21121702.html</url>
-      
-        <content type="html"><![CDATA[<hr><div class="note blue icon simple"><i class="note-icon fas fa-arrow-circle-left"></i><p><a href="https://blog.mqawa.com/21121701.html">返回视频导航页</a></p></div><hr><div class="video"><video controls preload><source src='https://blog.mqawa.com/videos/搞笑/talk.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>]]></content>
-      
-      
-      <categories>
-          
-          <category> 玩得开心 </category>
-          
-          <category> videos </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> videos </tag>
             
         </tags>
       
@@ -141,7 +141,7 @@
       <link href="/21120102.html"/>
       <url>/21120102.html</url>
       
-        <content type="html"><![CDATA[<hr><h3 id="官网链接"><a href="#官网链接" class="headerlink" title="官网链接"></a>官网链接</h3><p><strong>Visual Assist X 官网：</strong><a href="https://www.wholetomato.com/">https://www.wholetomato.com/</a> </p><p><strong>Everything 官网：</strong><a href="https://www.voidtools.com/zh-cn/">https://www.voidtools.com/zh-cn/</a></p><hr><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>如果已安装 Visual Assist X 请先卸载</strong></p><p><strong>扩展-&gt;管理扩展-&gt;已安装-&gt;Visual Assist X-&gt;卸载-&gt;关闭Visual Studio-&gt;等待卸载完成</strong></p><p><strong>下载 Visual Assist X 破解文件 + Everything ：</strong><a href="http://cloud.mqawa.com/s/jdTg">Cloudreve</a>，<a href="https://pan.baidu.com/s/1aOO8UDlJTCwScXvoUtINLw">百度网盘</a> <strong>提取码：t7mm</strong></p><p><strong>下载解压，安装Everything 和 Visual Assist X</strong></p><p><img src="../../../images/share/software/devtools/visual_assist_x/1.png" alt="everything"><img src="../../../images/share/software/devtools/visual_assist_x/2.png" alt="visual assist"></p><hr><h3 id="破解"><a href="#破解" class="headerlink" title="破解"></a>破解</h3><p><strong>打开 Everything，搜索 VA_X.dll，如果安装多个版本的 Visual Studio，会检索到多个 VA_X.dll，需要全部替换</strong></p><p><strong>我的路径为 ： C:\Users\CtrlZ\AppData\Local\Microsoft\VisualStudio\16.0_45dbff82\Extensions\5tmzqshx.03l</strong></p><p><strong>无法使用 Everything 可以参考路径寻找</strong></p><p><img src="../../../images/share/software/devtools/visual_assist_x/3.png" alt="搜索结果"></p><p><strong>把解压好的VA_X.dll，替换到打开的路径，破解完成</strong></p><p>本站资源仅供技术交流，请勿用于商业及非法用途，如产生法律纠纷与本站无关</p><hr>]]></content>
+        <content type="html"><![CDATA[<hr><h3 id="官网链接"><a href="#官网链接" class="headerlink" title="官网链接"></a>官网链接</h3><p><strong>Visual Assist X 官网：</strong><a href="https://www.wholetomato.com/">https://www.wholetomato.com/</a> </p><p><strong>Everything 官网：</strong><a href="https://www.voidtools.com/zh-cn/">https://www.voidtools.com/zh-cn/</a></p><hr><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>如果已安装 Visual Assist X 请先卸载</strong></p><p><strong>扩展-&gt;管理扩展-&gt;已安装-&gt;Visual Assist X-&gt;卸载-&gt;关闭Visual Studio-&gt;等待卸载完成</strong></p><p><strong>下载 Visual Assist X 破解文件 + Everything ：</strong><a href="http://cloud.mqawa.com/s/jdTg">Cloudreve</a>，<a href="https://pan.baidu.com/s/1aOO8UDlJTCwScXvoUtINLw">百度网盘</a> <strong>提取码：t7mm</strong></p><p><strong>下载解压，安装Everything 和 Visual Assist X</strong></p><p><img src="../../../res/images/share/software/devtools/visual_assist_x/1.png" alt="everything"><img src="../../../res/images/share/software/devtools/visual_assist_x/2.png" alt="visual assist"></p><hr><h3 id="破解"><a href="#破解" class="headerlink" title="破解"></a>破解</h3><p><strong>打开 Everything，搜索 VA_X.dll，如果安装多个版本的 Visual Studio，会检索到多个 VA_X.dll，需要全部替换</strong></p><p><strong>我的路径为 ： C:\Users\CtrlZ\AppData\Local\Microsoft\VisualStudio\16.0_45dbff82\Extensions\5tmzqshx.03l</strong></p><p><strong>无法使用 Everything 可以参考路径寻找</strong></p><p><img src="../../../res/images/share/software/devtools/visual_assist_x/3.png" alt="搜索结果"></p><p><strong>把解压好的VA_X.dll，替换到打开的路径，破解完成</strong></p><p>本站资源仅供技术交流，请勿用于商业及非法用途，如产生法律纠纷与本站无关</p><hr>]]></content>
       
       
       <categories>
