@@ -9,7 +9,13 @@
   .el-textarea__inner:focus{
       background-image: none !important;
   }
-  
+
+
+.tk-owo-emotion{
+  min-height: 100px !important;
+  min-width: 100px !important;
+}
+
 /*
  *top-img黑色透明玻璃效果移除
  */
