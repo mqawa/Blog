@@ -85,3 +85,7 @@
   --font-color: rgb(0, 0, 0);
   --hr-border: rgb(104, 133, 163);
 }
+
+.mermaid {
+  background: transparent!important;
+}
