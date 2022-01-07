@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>碎碎念 - 站点日记</title>
+      <link href="/22010701.html"/>
+      <url>/22010701.html</url>
+      
+        <content type="html"><![CDATA[<hr><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>由于本文开的比较晚，所以建站的记录莫得了 T-T</p><hr><h2 id="资源转移"><a href="#资源转移" class="headerlink" title="资源转移"></a>资源转移</h2><h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><ul><li>节省服务器流量</li><li>提高站点访问速度</li><li>统一管理站点资源</li></ul><h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><ul><li>备份站点（以防万一）</li><li>将所有资源转移至腾讯云对象存储</li><li>更新站点资源链接</li><li>确认站点可用</li></ul><hr><h2 id="境内站点搭建"><a href="#境内站点搭建" class="headerlink" title="境内站点搭建"></a>境内站点搭建</h2><h3 id="目的-1"><a href="#目的-1" class="headerlink" title="目的"></a>目的</h3><ul><li>优化境内访问速度</li></ul><h3 id="过程-1"><a href="#过程-1" class="headerlink" title="过程"></a>过程</h3><ul><li>在境内购买服务器并安装基本工具</li><li>购买域名在腾讯云进行备案</li><li>经过4天的等待，备案成功（此处夸一下吉林省的备案速度）</li><li>境内站点搭建成功，与境外站点同步更新</li></ul><h3 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h3><ul><li>境内访客请优先访问 : <a href="https://blog.mqawa.cn">https://blog.mqawa.cn</a></li><li>境外访客请优先访问 : <a href="https://blog.mqawa.com">https://blog.mqawa.com</a></li></ul><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 碎碎念 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 碎碎念 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Chrome 插件分享</title>
       <link href="/22010401.html"/>
       <url>/22010401.html</url>
