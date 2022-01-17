@@ -76,6 +76,42 @@
   --hr-border: rgb(153,204,255);
 }
 
+/*
+ * 流程图背景透明
+ */
+
 .mermaid {
   background: transparent!important;
+}
+
+/*
+ * 设置按钮
+ */
+
+button#rightside_config {
+  border-radius: 10px;
+}
+
+/*
+ * 回到顶部按钮
+ */
+
+button#go-up {
+  border-radius: 10px;
+}
+
+/*
+ * 隐藏侧边栏按钮
+ */
+
+button#hide-aside-btn {
+  border-radius: 10px;
+}
+
+/*
+ * 简繁转换按钮
+ */
+
+button#translateLink {
+  border-radius: 10px;
 }
