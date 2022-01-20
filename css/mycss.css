@@ -115,3 +115,27 @@ button#hide-aside-btn {
 button#translateLink {
   border-radius: 10px;
 }
+
+/*
+ * 阅读模式按钮
+ */
+
+button#readmode {
+  border-radius: 10px;
+}
+
+/*
+ * 评论按钮
+ */
+
+a#to_comment {
+  border-radius: 10px;  
+}
+
+/*
+ * 列表按钮
+ */
+
+button#mobile-toc-button {
+  border-radius: 10px;
+}
