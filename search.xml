@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>碎碎念 - 我的云服务（一）</title>
+      <link href="/22021201.html"/>
+      <url>/22021201.html</url>
+      
+        <content type="html"><![CDATA[<hr><p>&emsp;<strong>因工作和学习需求，博主无法随身携带笔记本电脑，但博客源码又无法在多台电脑间同步，这对我造成很大的困扰</strong></p><h2 id="code-server"><a href="#code-server" class="headerlink" title="code-server"></a>code-server</h2><p>&emsp;<strong>code-server 是一款基于 VS Code 的在线编辑器,主要用于在 Linux 服务器环境下,实现任何设备通过浏览器即可访问 VS Code, 进而实现远程编程</strong><br>&emsp;<strong>目前 code-server 开源在 Github : <a href="https://github.com/coder/code-server">https://github.com/coder/code-server</a></strong><br>&emsp;<strong>这是搭建完成后的样子，和 VS Code 简直一模一样</strong></p><p><img src="https://res.mqawa.cn/blog-res/images/talk/code-server/code-server.png" alt=""></p><hr><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="查看-Linux-系统架构"><a href="#查看-Linux-系统架构" class="headerlink" title="查看 Linux 系统架构"></a>查看 Linux 系统架构</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -a</span><br></pre></td></tr></table></figure><p><img src="https://res.mqawa.cn/blog-res/images/talk/code-server/uname.png" alt=""></p><h3 id="下载对应版本-code-server"><a href="#下载对应版本-code-server" class="headerlink" title="下载对应版本 code-server"></a>下载对应版本 code-server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/coder/code-server/releases/download/v4.0.2/code-server-4.0.2-linux-amd64.tar.gz</span><br></pre></td></tr></table></figure><h3 id="解压并移动到-usr-local-目录"><a href="#解压并移动到-usr-local-目录" class="headerlink" title="解压并移动到 /usr/local 目录"></a>解压并移动到 /usr/local 目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf code-server-4.0.2-linux-amd64.tar.gz</span><br><span class="line">mv code-server-4.0.2-linux-amd64.tar.gz/ /usr/<span class="built_in">local</span>/code-server</span><br></pre></td></tr></table></figure><hr><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/code/server</span><br><span class="line"><span class="built_in">export</span> PASSWORD=<span class="string">&quot;password&quot;</span> &amp;&amp; ./code-server --host 0.0.0.0 --port 8080</span><br><span class="line"><span class="comment"># password 为密码 --port 后面为自定义端口</span></span><br></pre></td></tr></table></figure><p><img src="https://res.mqawa.cn/blog-res/images/talk/code-server/success.png" alt=""></p><p>&emsp;<strong>启动成功</strong></p><hr><h2 id="配置code-server-后台运行"><a href="#配置code-server-后台运行" class="headerlink" title="配置code-server 后台运行"></a>配置code-server 后台运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">screen</span><br><span class="line"><span class="built_in">export</span> PASSWORD=<span class="string">&quot;password&quot;</span> &amp;&amp; ./code-server --host 0.0.0.0 --port 8080</span><br></pre></td></tr></table></figure><p>&emsp;<strong>按 <kbd>Ctrl</kbd> + <kbd>A</kbd> + <kbd>D</kbd> 退出会话</strong><br>&emsp;<strong>现在，code-server 已经在后台运行了，你可以访问 ip + 端口来使用 code-server</strong><br>&emsp;<strong>使用 code-server 编辑文章，在线预览，发布</strong></p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>&emsp;<strong>按 <kbd>Ctrl</kbd> + <kbd>`</kbd> 打开 code-server 终端</strong><br>&emsp;<strong>在扩展商店搜索 chinese 安装简体中文扩展</strong><br><img src="https://res.mqawa.cn/blog-res/images/talk/code-server/chinese.png" alt=""></p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 碎碎念 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 碎碎念 </tag>
+            
+            <tag> 云服务 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>碎碎念 - 站点更新记录</title>
       <link href="/22010701.html"/>
       <url>/22010701.html</url>
       
-        <content type="html"><![CDATA[<hr><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>本文用来记录本站硬件和网络的更新历史<br>文章的更新不在本文记录范围内</p><p>由于本文开的比较晚，所以建站的记录莫得了 T-T</p><hr><h2 id="资源转移"><a href="#资源转移" class="headerlink" title="资源转移"></a>资源转移</h2><h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><ul><li>节省服务器流量</li><li>提高站点访问速度</li><li>统一管理站点资源</li></ul><h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><ul><li>备份站点（以防万一）</li><li>将所有资源转移至腾讯云对象存储</li><li>更新站点资源链接</li><li>确认站点可用</li></ul><hr><h2 id="境内站点搭建"><a href="#境内站点搭建" class="headerlink" title="境内站点搭建"></a>境内站点搭建</h2><h3 id="目的-1"><a href="#目的-1" class="headerlink" title="目的"></a>目的</h3><ul><li>优化境内访问速度</li></ul><h3 id="过程-1"><a href="#过程-1" class="headerlink" title="过程"></a>过程</h3><ul><li>在境内购买服务器并安装基本工具</li><li>购买域名在腾讯云进行备案</li><li>经过4天的等待，备案成功（此处夸一下吉林省的备案速度）</li><li>境内站点搭建成功，与境外站点同步更新</li></ul><h3 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h3><ul><li>境内访客请优先访问 : <a href="https://blog.mqawa.cn">https://blog.mqawa.cn</a></li><li>境外访客请优先访问 : <a href="https://blog.mqawa.com">https://blog.mqawa.com</a></li></ul><hr><h2 id="开启-CDN-加速"><a href="#开启-CDN-加速" class="headerlink" title="开启 CDN 加速"></a>开启 CDN 加速</h2><h3 id="目的-2"><a href="#目的-2" class="headerlink" title="目的"></a>目的</h3><ul><li>优化境内访问速度</li><li>节省网站流量</li></ul><h3 id="过程-2"><a href="#过程-2" class="headerlink" title="过程"></a>过程</h3><ul><li>购买腾讯云的 CDN 加速</li><li>为腾讯云对象存储开启 CDN 服务</li><li>为站点开启 CDN 服务</li><li>为站点配置 SSL 证书</li><li>测试站点</li></ul><hr>]]></content>
+        <content type="html"><![CDATA[<hr><div class="note danger simple"><p>此文章已删除</p></div><hr>]]></content>
       
       
       <categories>
