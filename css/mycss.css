@@ -1,20 +1,20 @@
 /*
  * Twikoo 魔改  高度和隐藏图片
  */
- 
-.tk-input[data-v-619b4c52]
-  .el-textarea__inner{
-    min-height: 180px !important;
-  }
-  .el-textarea__inner:focus{
-      background-image: none !important;
-  }
+
+.el-textarea__inner:focus {
+  background-image: none !important;
+}
+
+.el-textarea__inner {
+  min-height: 180px !important;
+}
 
 /*
  * Twikoo 表情放大
  */
 
-.tk-owo-emotion{
+.tk-owo-emotion {
   min-height: 100px !important;
   min-width: 100px !important;
 }
@@ -22,36 +22,37 @@
 /*
  * top-img黑色透明玻璃效果移除
  */
- 
+
 #page-header.post-bg:before {
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 /*
  * 头图透明
  */
- 
-#page-header{
-  background: transparent!important;
+
+#page-header {
+  background: transparent !important;
 }
 
 /*
  * 页脚透明
  */
- 
-#footer{
-    background: transparent!important;
+
+#footer {
+  background: transparent !important;
 }
 
 /*
  * 夜间模式伪类遮罩层透明
  */
- 
-[data-theme="dark"] #footer::before{
-  background: transparent!important;
+
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
 }
-[data-theme="dark"] #page-header::before{
-  background: transparent!important;
+
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
 }
 
 /*
@@ -73,7 +74,7 @@
   /* --font-color: rgba(255,255,255,0.7); */
   /* --hr-border: rgba(255,255,255,0.4); */
   --font-color: rgb(255, 255, 255);
-  --hr-border: rgb(153,204,255);
+  --hr-border: rgb(153, 204, 255);
 }
 
 /*
@@ -81,7 +82,7 @@
  */
 
 .mermaid {
-  background: transparent!important;
+  background: transparent !important;
 }
 
 /*
@@ -129,7 +130,7 @@ button#readmode {
  */
 
 a#to_comment {
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 /*
